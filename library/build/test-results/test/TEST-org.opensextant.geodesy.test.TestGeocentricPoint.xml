@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeocentricPoint" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.004">
+  <properties/>
+  <testcase name="testToString" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.0"/>
+  <testcase name="testRandomEquals" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.003"/>
+  <testcase name="testHashCode" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.0"/>
+  <testcase name="testNullPointCompare" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.0"/>
+  <testcase name="testEquals" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.0"/>
+  <testcase name="testGetSet" classname="org.opensextant.geodesy.test.TestGeocentricPoint" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

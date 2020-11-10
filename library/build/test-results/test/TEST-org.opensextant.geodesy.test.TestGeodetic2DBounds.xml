@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeodetic2DBounds" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.019">
+  <properties/>
+  <testcase name="testApproxEquals" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.001"/>
+  <testcase name="testCircleBounds" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.001"/>
+  <testcase name="testNullBBoxCompare" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testIDL" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.003"/>
+  <testcase name="testGrow2" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.004"/>
+  <testcase name="testGeodetic2DArcNullCompare" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testBBox" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testGrow" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.002"/>
+  <testcase name="testRandomBBox" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.003"/>
+  <testcase name="testPointRadius" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testIncludePoint" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testIntersect" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.001"/>
+  <testcase name="testGeodetic2DArc" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.0"/>
+  <testcase name="testInvalidArcCreation" classname="org.opensextant.geodesy.test.TestGeodetic2DBounds" time="0.001"/>
+  <system-out><![CDATA[(75° 0' 0" W, 30° 0' 0" N) -> (180° 0' 0" W, 0° 0' 0" N) .. (30° 0' 0" E, 60° 0' 0" N)
+(99° 39' 26" W, 79° 3' 5" S) 0.0 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 1414.2130980104243 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 2828.9960949112356 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 4244.348236155672 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 5660.268764097793 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 7076.7569179778675 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 8493.81193391733 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 9911.433044900055 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 11329.61948076717 meters radius
+(99° 39' 26" W, 79° 3' 5" S) 12748.370468203184 meters radius
+
+(180° 0' 0" W, 89° 57' 12" S) .. (180° 0' 0" W, 87° 50' 13" N)
+(30° 30' 0" E, 30° 30' 0" N) -> (30° 0' 0" E, 30° 0' 0" N) .. (31° 0' 0" E, 31° 0' 0" N)
+(88° 48' 52" W, 19° 35' 3" N) -> (88° 48' 52" W, 19° 35' 3" N) .. (80° 20' 34" E, 88° 21' 42" N)
+(110° 6' 47" E, 67° 34' 27" N) -> (88° 48' 52" W, 19° 35' 3" N) .. (110° 6' 47" E, 88° 21' 42" N)
+(77° 46' 39" E, 77° 3' 18" S) -> (88° 48' 52" W, 77° 3' 18" S) .. (110° 6' 47" E, 88° 21' 42" N)
+(106° 39' 14" E, 14° 10' 9" N) -> (88° 48' 52" W, 77° 3' 18" S) .. (110° 6' 47" E, 88° 21' 42" N)
+(146° 55' 31" E, 63° 11' 43" S) -> (88° 48' 52" W, 77° 3' 18" S) .. (146° 55' 31" E, 88° 21' 42" N)
+(171° 4' 45" E, 78° 11' 34" S) -> (88° 48' 52" W, 78° 11' 34" S) .. (171° 4' 45" E, 88° 21' 42" N)
+(154° 58' 25" W, 73° 39' 53" S) -> (88° 48' 52" W, 78° 11' 34" S) .. (154° 58' 25" W, 88° 21' 42" N)
+(27° 11' 31" W, 67° 23' 25" N) -> (88° 48' 52" W, 78° 11' 34" S) .. (154° 58' 25" W, 88° 21' 42" N)
+(27° 2' 15" E, 18° 37' 50" S) -> (88° 48' 52" W, 78° 11' 34" S) .. (154° 58' 25" W, 88° 21' 42" N)
+(87° 0' 23" W, 62° 29' 51" S) -> (88° 48' 52" W, 78° 11' 34" S) .. (154° 58' 25" W, 88° 21' 42" N)
+
+(86° 14' 43" W, 6° 53' 50" S) -> (87° 0' 23" W, 62° 29' 51" S) .. (86° 14' 43" W, 6° 53' 50" S)
+(21° 55' 25" W, 51° 56' 49" S) -> (87° 0' 23" W, 62° 29' 51" S) .. (21° 55' 25" W, 6° 53' 50" S)
+(41° 6' 59" E, 83° 58' 39" S) -> (87° 0' 23" W, 83° 58' 39" S) .. (41° 6' 59" E, 6° 53' 50" S)
+(68° 0' 9" E, 33° 8' 25" N) -> (87° 0' 23" W, 83° 58' 39" S) .. (68° 0' 9" E, 33° 8' 25" N)
+(152° 54' 24" W, 80° 25' 30" N) -> (152° 54' 24" W, 83° 58' 39" S) .. (68° 0' 9" E, 80° 25' 30" N)
+(22° 43' 28" W, 34° 53' 12" N) -> (152° 54' 24" W, 83° 58' 39" S) .. (68° 0' 9" E, 80° 25' 30" N)
+(63° 30' 12" E, 23° 10' 52" N) -> (152° 54' 24" W, 83° 58' 39" S) .. (68° 0' 9" E, 80° 25' 30" N)
+(26° 53' 37" E, 20° 9' 54" S) -> (152° 54' 24" W, 83° 58' 39" S) .. (68° 0' 9" E, 80° 25' 30" N)
+(111° 54' 50" W, 85° 11' 24" S) -> (152° 54' 24" W, 85° 11' 24" S) .. (68° 0' 9" E, 80° 25' 30" N)
+(168° 38' 22" W, 59° 28' 24" N) -> (168° 38' 22" W, 85° 11' 24" S) .. (68° 0' 9" E, 80° 25' 30" N)
+
+(180° 0' 0" W, 85° 11' 24" S) .. (180° 0' 0" W, 88° 21' 42" N)
+Diagonal by distance method 1: 1174070.3286236678
+Diagonal by distance method 2: 1174070.3286236678
+(99° 39' 26" W, 79° 55' 12" N) .. (159° 26' 19" E, 88° 21' 42" N)
+Error in Diagonal = 127.12667938735001 Percent
+Diagonal = 1174070.3286236678, expecting 2666626.9510750845
+--------------
+
+(12° 34' 56.00000" E, 45° 34' 23.00000" N)
+(13° 27' 29.36001" E, 46° 30' 4.47423" N)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

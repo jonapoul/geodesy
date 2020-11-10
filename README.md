@@ -7,6 +7,9 @@ You can then perform various operations on the shapes and points
 such as discovering distance, whether shapes intersect and such. The shapes can have altitude
 but not an arbitrary 3D shape.
 
+## FORK DIFFERENCES
+Removed slf4j and simplified build process (for me, at least).
+
 ## Building ##
 
 Setup your gradle.properties file appropriately after reading [Gradle](http://www.gradle.org/) documentation.

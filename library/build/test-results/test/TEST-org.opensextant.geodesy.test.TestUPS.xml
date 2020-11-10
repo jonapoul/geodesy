@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestUPS" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:12" hostname="KENNETH" time="0.013">
+  <properties/>
+  <testcase name="testProjections" classname="org.opensextant.geodesy.test.TestUPS" time="0.012"/>
+  <testcase name="testToString" classname="org.opensextant.geodesy.test.TestUPS" time="0.001"/>
+  <testcase name="testSouthPole" classname="org.opensextant.geodesy.test.TestUPS" time="0.0"/>
+  <testcase name="testInvalidCreation" classname="org.opensextant.geodesy.test.TestUPS" time="0.0"/>
+  <testcase name="testEquals" classname="org.opensextant.geodesy.test.TestUPS" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

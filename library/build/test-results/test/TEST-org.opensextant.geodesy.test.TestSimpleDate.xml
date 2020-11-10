@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestSimpleDate" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:07" hostname="KENNETH" time="5.015">
+  <properties/>
+  <testcase name="testThreads" classname="org.opensextant.geodesy.test.TestSimpleDate" time="5.012"/>
+  <testcase name="testTimeZome" classname="org.opensextant.geodesy.test.TestSimpleDate" time="0.001"/>
+  <testcase name="testEmptyFormat" classname="org.opensextant.geodesy.test.TestSimpleDate" time="0.0"/>
+  <testcase name="testNullFormat" classname="org.opensextant.geodesy.test.TestSimpleDate" time="0.0"/>
+  <testcase name="testFormat" classname="org.opensextant.geodesy.test.TestSimpleDate" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

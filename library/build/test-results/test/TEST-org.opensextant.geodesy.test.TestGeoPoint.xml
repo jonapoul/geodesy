@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeoPoint" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.038">
+  <properties/>
+  <testcase name="testConversions" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.006"/>
+  <testcase name="testToString" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.001"/>
+  <testcase name="testStringCreation" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.0"/>
+  <testcase name="testLatLonAngle" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.001"/>
+  <testcase name="testReference" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.0"/>
+  <testcase name="testRandomEquals" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.028"/>
+  <testcase name="testHashCode" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.0"/>
+  <testcase name="testBadReference" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.001"/>
+  <testcase name="testEquals" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.0"/>
+  <testcase name="testNullCompare" classname="org.opensextant.geodesy.test.TestGeoPoint" time="0.0"/>
+  <system-out><![CDATA[(176° 7' 34" E, 84° 2' 11" S)
+(176° 7' 34.1" E, 84° 2' 11.0" S)
+(176° 7' 34.10" E, 84° 2' 11.00" S)
+(176° 7' 34.097" E, 84° 2' 10.997" S)
+(176° 7' 34.0973" E, 84° 2' 10.9969" S)
+(176° 7' 34.09731" E, 84° 2' 10.99688" S)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

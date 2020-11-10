@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeodetic3DPoint" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.016">
+  <properties/>
+  <testcase name="testConversions" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.012"/>
+  <testcase name="testToString" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.001"/>
+  <testcase name="testMismatchedEquals" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.0"/>
+  <testcase name="testRandomEquals" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.002"/>
+  <testcase name="testHashCode" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.0"/>
+  <testcase name="testEquals" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.0"/>
+  <testcase name="testNullCompare" classname="org.opensextant.geodesy.test.TestGeodetic3DPoint" time="0.0"/>
+  <system-out><![CDATA[0 (7° 58' 53" W, 12° 13' 0" S) @ 712443m
+1 (7° 58' 53.0" W, 12° 12' 59.5" S) @ 712443.0m
+2 (7° 58' 52.96" W, 12° 12' 59.54" S) @ 712443.00m
+3 (7° 58' 52.962" W, 12° 12' 59.536" S) @ 712443.000m
+4 (7° 58' 52.9621" W, 12° 12' 59.5364" S) @ 712443.0000m
+5 (7° 58' 52.96207" W, 12° 12' 59.53641" S) @ 712443.00000m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

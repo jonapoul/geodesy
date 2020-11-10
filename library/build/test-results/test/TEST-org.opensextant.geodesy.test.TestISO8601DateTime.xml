@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestISO8601DateTime" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.083">
+  <properties/>
+  <testcase name="testIntervalCompareTo" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.002"/>
+  <testcase name="testDefaultTimeInterval" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.0"/>
+  <testcase name="testCompareTo" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.0"/>
+  <testcase name="testNullTimeInterval" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.0"/>
+  <testcase name="testInvalidCreation" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.001"/>
+  <testcase name="testTimePoint" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.04"/>
+  <testcase name="testTimeInterval" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.039"/>
+  <testcase name="testNullCompare" classname="org.opensextant.geodesy.test.TestISO8601DateTime" time="0.0"/>
+  <system-out><![CDATA[1970 means 1970-01-01T00:00:00.000Z
+1970-01 means 1970-01-01T00:00:00.000Z
+1970-01-01 means 1970-01-01T00:00:00.000Z
+1970-01-01T00 means 1970-01-01T00:00:00.000Z
+1970-01-01T00:00 means 1970-01-01T00:00:00.000Z
+1970-01-01T00:00:00 means 1970-01-01T00:00:00.000Z
+1970-01-01T00:00:00.000 means 1970-01-01T00:00:00.000Z
+1970-01-01T00:00:00.000Z means 1970-01-01T00:00:00.000Z
+1970 means 1970-01-01T00:00:00.000Z--1970-12-31T23:59:59.999Z
+1970-01 means 1970-01-01T00:00:00.000Z--1970-01-31T23:59:59.999Z
+1970-01-01 means 1970-01-01T00:00:00.000Z--1970-01-01T23:59:59.999Z
+1970-01-01T00 means 1970-01-01T00:00:00.000Z--1970-01-01T00:59:59.999Z
+1970-01-01T00:00 means 1970-01-01T00:00:00.000Z--1970-01-01T00:00:59.999Z
+1970-01-01T00:00:00 means 1970-01-01T00:00:00.000Z--1970-01-01T00:00:00.999Z
+1970-01-01T00:00:00.000 means 1970-01-01T00:00:00.000Z--1970-01-01T00:00:00.000Z
+1970-01-01T00:00:00.000Z means 1970-01-01T00:00:00.000Z--1970-01-01T00:00:00.000Z
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestMGRS" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="5.536">
+  <properties/>
+  <testcase name="testCreateFromBounds" classname="org.opensextant.geodesy.test.TestMGRS" time="0.005"/>
+  <testcase name="testCreateFromLatLon" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testBoundary" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testMGRSNullCompare" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testToString" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testGeodetic2DPoint" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testHashSet" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testMgrsInvalidPrecision" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testStringCombos" classname="org.opensextant.geodesy.test.TestMGRS" time="5.493"/>
+  <testcase name="testCreateFromBoundingBox" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testStrictCheck" classname="org.opensextant.geodesy.test.TestMGRS" time="0.001"/>
+  <testcase name="testGeodeticSample" classname="org.opensextant.geodesy.test.TestMGRS" time="0.033"/>
+  <testcase name="testBadCoords" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testMgrsAtPoleNonZeroLon" classname="org.opensextant.geodesy.test.TestMGRS" time="0.001"/>
+  <testcase name="testMgrsAtPoles" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <testcase name="testFormatAndParse" classname="org.opensextant.geodesy.test.TestMGRS" time="0.001"/>
+  <testcase name="testLandmarks" classname="org.opensextant.geodesy.test.TestMGRS" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

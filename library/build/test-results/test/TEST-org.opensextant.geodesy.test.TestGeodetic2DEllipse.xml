@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeodetic2DEllipse" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.003">
+  <properties/>
+  <testcase name="testCreation" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.002"/>
+  <testcase name="testSetInvalidMinor" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testNullEllipseCompare" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testSetInvalidAxes" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testNonEllipseEquals" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testBounds" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testEquals" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <testcase name="testCreateAndSet" classname="org.opensextant.geodesy.test.TestGeodetic2DEllipse" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

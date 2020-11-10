@@ -1,140 +1,20 @@
-apply plugin: "java"
-apply plugin: "eclipse"
-apply plugin: "maven"
-apply plugin: "signing"
-
-group = "org.opensextant"
-version = "2.0.2-SNAPSHOT"
-ext.isReleaseVersion = !version.endsWith('-SNAPSHOT')
-javadoc.options.encoding = compileJava.options.encoding = compileTestJava.options.encoding = 'ISO-8859-1'
-
-// Define var to avoid deref problem, will redefined normally
-ext.publish = [user: null, password: null]
-
-// Publishing locations
-if (project.hasProperty('ospubLocaldest')) {
-	ext.oss_snapshot = ospubLocaldest
-	ext.publish.user = mavenUser
-	ext.publish.password = mavenPassword
-} else {
-	ext.oss_snapshot = "https://oss.sonatype.org/content/repositories/snapshots"
-}
-def oss_staging = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
-
-repositories {
-	mavenCentral()
-}
-
-eclipse {
-	project {
-		name = 'geodesy'
-		natures 'org.springsource.ide.eclipse.gradle.core.nature',
-			'org.eclipse.jdt.groovy.core.groovyNature'
-	}
-	classpath {
-		plusConfigurations += configurations.runtime
-	}
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-	classifier = 'javadoc'
-	from 'build/docs/javadoc'
-}
- 
-task sourcesJar(type: Jar) {
-	from sourceSets.main.allSource
-	classifier = 'sources'
-}
-
-javadoc {
-	failOnError = false
-}
-
-jar {
-	baseName = "geodesy"
-}
-
-artifacts {
-	archives jar
-	archives javadocJar
-	archives sourcesJar
-}
-
-signing {
-	required isReleaseVersion
-	sign configurations.archives
-}
-
-dependencies {
-	def slf4j_version = '1.7.2'
-	
-	compile group: 'org.slf4j', name: 'slf4j-api', version: slf4j_version
-	compile group: 'findbugs', name: 'annotations', version: "1.0.0"
-	testCompile('junit:junit:4.11')
-	testRuntime group: 'org.slf4j', name: 'slf4j-simple', version: slf4j_version
-}
-
-uploadArchives.doFirst {
-	// Setup publishing variables
-	if (publish.user == null && publish.password == null) {
-		ext.publish = [user: (project.hasProperty('ospubUsername') ? osPub.user : null),
-			password: (project.hasProperty('ospubPassword') ? osPub.password : null)]
-	}
-	
-	// Check presets
-	if (publish.user == null || publish.password == null) {
-		throw new Exception('ospubUsername and ospubPassword must be defined when uploading ')
-	}
-}
-
-uploadArchives {
+buildscript {
 	repositories {
-		mavenDeployer {
-			beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
- 
-			repository(url: oss_staging) {
-				authentication(userName: publish.user, password: publish.password)
-			}
-			
-			snapshotRepository(url: oss_snapshot) {
-				authentication(userName: publish.user, password: publish.password)
-			}
-			
-			pom.project {
-			   name 'geodesy'
-			   packaging 'jar'
-			   description 'Geodesy is a small package to manipulate points on the surface of an ellipsoid model of a planetary sphere'
-			   url 'https://github.com/OpenSextant/geodesy'
- 
-			   scm {
-				   url 'scm:git://github.com/OpenSextant/geodesy.git'
-				   connection 'scm:git@github.com:OpenSextant/geodesy.git'
-				   developerConnection 'scm:git@github.com:OpenSextant/geodesy.git'
-			   }
- 
-			   licenses {
-				   license {
-					   name 'The Apache Software License, Version 2.0'
-					   url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-					   distribution 'repo'
-				   }
-			   }
- 
-			   developers {
-				   developer {
-					   id 'paulsilvey'
-					   name 'Paul Silvey'
-				   }
-				   developer {
-					   id 'drand'
-					   name 'Doug Rand'
-				   }
-				   developer {
-				   		id 'docjason'
-						name 'Jason Mathews'
-				   }
-			   }
-		   }
-		}
+		google()
+		mavenCentral()
+		jcenter()
 	}
+	dependencies {
+		classpath "com.android.tools.build:gradle:4.1.1"
+	}
+}
+
+allprojects {
+	repositories {
+		mavenCentral()
+	}
+}
+
+task clean(type: Delete) {
+	delete rootProject.buildDir
 }

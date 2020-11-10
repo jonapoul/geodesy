@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.opensextant.geodesy.test.TestGeodetic3DBounds" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-10T21:54:01" hostname="KENNETH" time="0.001">
+  <properties/>
+  <testcase name="test2dEquals" classname="org.opensextant.geodesy.test.TestGeodetic3DBounds" time="0.0"/>
+  <testcase name="testNullBBoxCompare" classname="org.opensextant.geodesy.test.TestGeodetic3DBounds" time="0.0"/>
+  <testcase name="testBBox" classname="org.opensextant.geodesy.test.TestGeodetic3DBounds" time="0.0"/>
+  <testcase name="testRandomBBox" classname="org.opensextant.geodesy.test.TestGeodetic3DBounds" time="0.0"/>
+  <testcase name="testContains" classname="org.opensextant.geodesy.test.TestGeodetic3DBounds" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
